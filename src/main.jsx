@@ -1,10 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+console.log('main.jsx is loading')
+
+const rootElement = document.getElementById('root')
+console.log('Root element:', rootElement)
+
+if (rootElement) {
+  const root = createRoot(rootElement)
+  console.log('Root created, rendering App')
+  root.render(<App />)
+} else {
+  console.error('Root element not found!')
+}

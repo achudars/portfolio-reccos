@@ -1,25 +1,18 @@
-import { useState } from 'react'
+import PortfolioOptimizer from './PortfolioOptimizer'
+import ErrorBoundary from './ErrorBoundary'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  console.log('App component is rendering')
+  
   return (
     <div className="App">
-      <div>
-        <h1>Portfolio Reccos</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs">
-          Click on the Vite logo to learn more
-        </p>
-      </div>
+      <h1 style={{ color: 'white', textAlign: 'center', padding: '20px' }}>
+        Debug: App is loading...
+      </h1>
+      <ErrorBoundary>
+        <PortfolioOptimizer />
+      </ErrorBoundary>
     </div>
   )
 }
