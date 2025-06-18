@@ -5,11 +5,13 @@ A portfolio recommendation application built with React and Vite.
 ## Getting Started
 
 ### Development
+
 ```bash
 npm run dev
 ```
 
 ### Testing
+
 ```bash
 npm test          # Run tests in watch mode
 npm run test:run  # Run tests once
@@ -17,6 +19,7 @@ npm run test:ui   # Run tests with UI
 ```
 
 ### Build
+
 ```bash
 npm run build
 npm run preview
@@ -36,3 +39,4 @@ npm run preview
 - **build**: add npm scripts for development, testing, and building
 - **chore**: add .gitignore for Node.js project
 - **docs**: create comprehensive README with setup instructions
+- **chore**: bump version to 0.1.0 - initial project setup complete
