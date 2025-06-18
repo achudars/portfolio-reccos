@@ -3,8 +3,6 @@ import StockPortfolioOptimizer from './StockPortfolioOptimizer'
 import './PortfolioOptimizer.css'
 
 const PortfolioOptimizer = () => {
-  console.log('PortfolioOptimizer component is rendering')
-  
   const [budget, setBudget] = useState(20000)
   const [stocks, setStocks] = useState([
     { name: 'Stock A', price: 393, performance: 179 },
