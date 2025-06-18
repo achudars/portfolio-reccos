@@ -69,3 +69,10 @@ npm run preview
 - **test**: add comprehensive unit tests for StockPortfolioOptimizer class
 - **refactor**: replace placeholder counter app with portfolio optimization tool
 - **chore**: bump version to 0.2.0 - portfolio optimizer implementation complete
+- **fix**: update React 19 compatibility with createRoot API
+- **feat**: add ErrorBoundary component for better error handling
+- **fix**: resolve JSX rendering issues and improve debugging
+- **build**: update dependencies to latest versions (React 19, Vite 6, Vitest 3)
+- **chore**: commit project to GitHub with comprehensive changes
+- **chore**: bump version to 0.2.1 - bug fixes and deployment ready
+- **chore**: bump version to 0.2.0 - portfolio optimizer implementation complete
