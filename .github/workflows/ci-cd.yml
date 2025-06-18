@@ -41,4 +41,4 @@ jobs:
         with:
           name: build-files-node-${{ matrix.node-version }}
           path: dist/
-          retention-days: 1
+          retention-days: 7
