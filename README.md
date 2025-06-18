@@ -1,9 +1,5 @@
 # portfolio-reccos
 
-[![CI/CD](https://github.com/achudars/portfolio-reccos/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/achudars/portfolio-reccos/actions/workflows/ci-cd.yml)
-[![Security](https://github.com/achudars/portfolio-reccos/actions/workflows/security.yml/badge.svg)](https://github.com/achudars/portfolio-reccos/actions/workflows/security.yml)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://achudars.github.io/portfolio-reccos/)
-
 A stock portfolio optimization application built with React and Vite. This tool helps you analyze investment strategies and optimize stock allocations based on your budget and stock performance projections.
 
 ## Screenshot
@@ -89,11 +85,3 @@ npm run preview
 - **feat**: add release automation with semantic versioning
 - **build**: integrate ESLint with React-specific rules and configurations
 - **docs**: add GitHub Actions status badges and workflow documentation
-
-## Adding the Screenshot
-
-To complete the README setup, please add the screenshot:
-
-1. Save your screenshot image as `app-screenshot.png` in the `assets/` directory
-2. The image will automatically display in the README
-3. Recommended: PNG format, under 2MB file size
