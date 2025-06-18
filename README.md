@@ -63,7 +63,6 @@ npm run preview
 - **build**: add npm scripts for development, testing, and building
 - **chore**: add .gitignore for Node.js project
 - **docs**: create comprehensive README with setup instructions
-- **chore**: bump version to 0.1.0 - initial project setup complete
 - **feat**: integrate StockPortfolioOptimizer class for investment analysis
 - **feat**: create comprehensive UI with stock input forms and budget configuration
 - **feat**: add dual investment strategy analysis (Pure Performance vs Diversified)
@@ -72,13 +71,11 @@ npm run preview
 - **test**: update tests for new portfolio optimizer functionality
 - **test**: add comprehensive unit tests for StockPortfolioOptimizer class
 - **refactor**: replace placeholder counter app with portfolio optimization tool
-- **chore**: bump version to 0.2.0 - portfolio optimizer implementation complete
 - **fix**: update React 19 compatibility with createRoot API
 - **feat**: add ErrorBoundary component for better error handling
 - **fix**: resolve JSX rendering issues and improve debugging
 - **build**: update dependencies to latest versions (React 19, Vite 6, Vitest 3)
 - **chore**: commit project to GitHub with comprehensive changes
-- **chore**: bump version to 0.2.1 - bug fixes and deployment ready
 - **feat**: add comprehensive GitHub Actions CI/CD pipeline
 - **feat**: implement automated testing, linting, and security scanning
 - **feat**: add automatic dependency updates with PR creation
@@ -86,4 +83,3 @@ npm run preview
 - **feat**: add release automation with semantic versioning
 - **build**: integrate ESLint with React-specific rules and configurations
 - **docs**: add GitHub Actions status badges and workflow documentation
-- **chore**: bump version to 0.3.0 - CI/CD implementation complete

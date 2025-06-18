@@ -1,7 +1,9 @@
-{  "name": "portfolio-reccos",
+{
+  "name": "portfolio-reccos",
   "private": true,
   "version": "0.3.0",
-  "type": "module","scripts": {
+  "type": "module",
+  "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -10,7 +12,8 @@
     "test:run": "vitest run",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext js,jsx --fix"
-  },  "devDependencies": {
+  },
+  "devDependencies": {
     "@vitejs/plugin-react": "4.5.2",
     "vite": "6.3.5",
     "vitest": "3.2.4",

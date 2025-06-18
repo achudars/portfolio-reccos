@@ -5,6 +5,7 @@ This directory contains the GitHub Actions workflows for the Portfolio Reccos pr
 ## Workflows
 
 ### 🔄 CI/CD Pipeline (`ci-cd.yml`)
+
 - **Triggers**: Push to main/develop, Pull requests to main
 - **Jobs**:
   - **Test**: Runs on Node.js 18.x and 20.x
@@ -16,6 +17,7 @@ This directory contains the GitHub Actions workflows for the Portfolio Reccos pr
   - **Deploy**: Deploys to GitHub Pages (main branch only)
 
 ### 🔒 Security & Dependencies (`security.yml`)
+
 - **Triggers**: Weekly schedule (Mondays), Push/PR to main
 - **Jobs**:
   - **Security Audit**: Checks for vulnerabilities
@@ -23,11 +25,13 @@ This directory contains the GitHub Actions workflows for the Portfolio Reccos pr
   - **CodeQL Analysis**: Static code analysis for security issues
 
 ### 📦 Update Dependencies (`update-deps.yml`)
+
 - **Triggers**: Weekly schedule (Sundays), Manual trigger
 - **Jobs**:
   - **Update Dependencies**: Automatically updates dependencies and creates PRs
 
 ### 🚀 Release (`release.yml`)
+
 - **Triggers**: Git tags matching `v*.*.*`
 - **Jobs**:
   - **Create Release**: Builds, tests, and creates GitHub releases
