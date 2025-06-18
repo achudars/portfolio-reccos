@@ -6,6 +6,12 @@
 
 A stock portfolio optimization application built with React and Vite. This tool helps you analyze investment strategies and optimize stock allocations based on your budget and stock performance projections.
 
+## Screenshot
+
+![Stock Portfolio Optimizer Application](./Screenshot%202025-06-18%20at%2023-26-46%20Portfolio%20Reccos.png)
+
+_The Stock Portfolio Optimizer interface showing stock input, strategy analysis, and investment recommendations._
+
 ## Features
 
 - **Interactive Stock Input**: Add multiple stocks with customizable names, prices, and 10-year performance projections
@@ -83,3 +89,11 @@ npm run preview
 - **feat**: add release automation with semantic versioning
 - **build**: integrate ESLint with React-specific rules and configurations
 - **docs**: add GitHub Actions status badges and workflow documentation
+
+## Adding the Screenshot
+
+To complete the README setup, please add the screenshot:
+
+1. Save your screenshot image as `app-screenshot.png` in the `assets/` directory
+2. The image will automatically display in the README
+3. Recommended: PNG format, under 2MB file size
