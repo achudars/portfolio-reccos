@@ -37,6 +37,18 @@ npm run test:run  # Run tests once
 npm run test:ui   # Run tests with UI
 ```
 
+### Coverage Reporting
+
+```bash
+npm run test:coverage    # Run tests with coverage report
+npm run coverage:open    # Generate and open HTML coverage report
+npm run coverage:summary # Detailed coverage summary
+```
+
+Current test coverage: **76.78%** overall with comprehensive test suites for all components.
+
+For detailed information about coverage reporting, see [COVERAGE.md](./COVERAGE.md).
+
 ### Build
 
 ```bash

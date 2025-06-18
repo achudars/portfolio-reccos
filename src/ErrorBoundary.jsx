@@ -16,16 +16,14 @@ class ErrorBoundary extends React.Component {
       errorInfo: errorInfo
     })
   }
-
   render() {
     if (this.state.hasError) {
       return (
         <div style={{ padding: '20px', background: 'white', margin: '20px' }}>
-          <h2>Something went wrong.</h2>
-          <details style={{ whiteSpace: 'pre-wrap' }}>
-            Error: {this.state.error && this.state.error.toString()}
+          <h2>Something went wrong.</h2>          <details style={{ whiteSpace: 'pre-wrap' }}>
+            Error: {this.state.error?.toString()}
             <br />
-            Component Stack: {this.state.errorInfo.componentStack}
+            Component Stack: {this.state.errorInfo?.componentStack}
           </details>
         </div>
       )
