@@ -161,7 +161,7 @@ const PortfolioOptimizer = () => {
 
           {/* Strategy Results */}
           <div className="strategies-section">
-            <h3>Investment Strategies</h3>            {results.strategies.map((strategy, index) => (
+            <h3>Investment Strategies</h3>            {results.strategies.map((strategy) => (
               <div key={`strategy-${strategy.name}`} className="strategy-card">
                 <h4>{strategy.name}</h4>
                 

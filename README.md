@@ -1,5 +1,9 @@
 # portfolio-reccos
 
+[![CI/CD](https://github.com/achudars/portfolio-reccos/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/achudars/portfolio-reccos/actions/workflows/ci-cd.yml)
+[![Security](https://github.com/achudars/portfolio-reccos/actions/workflows/security.yml/badge.svg)](https://github.com/achudars/portfolio-reccos/actions/workflows/security.yml)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen)](https://achudars.github.io/portfolio-reccos/)
+
 A stock portfolio optimization application built with React and Vite. This tool helps you analyze investment strategies and optimize stock allocations based on your budget and stock performance projections.
 
 ## Features
@@ -75,4 +79,11 @@ npm run preview
 - **build**: update dependencies to latest versions (React 19, Vite 6, Vitest 3)
 - **chore**: commit project to GitHub with comprehensive changes
 - **chore**: bump version to 0.2.1 - bug fixes and deployment ready
-- **chore**: bump version to 0.2.0 - portfolio optimizer implementation complete
+- **feat**: add comprehensive GitHub Actions CI/CD pipeline
+- **feat**: implement automated testing, linting, and security scanning
+- **feat**: add automatic dependency updates with PR creation
+- **feat**: configure GitHub Pages deployment
+- **feat**: add release automation with semantic versioning
+- **build**: integrate ESLint with React-specific rules and configurations
+- **docs**: add GitHub Actions status badges and workflow documentation
+- **chore**: bump version to 0.3.0 - CI/CD implementation complete
