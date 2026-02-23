@@ -5,55 +5,57 @@ import PortfolioOptimizer from './PortfolioOptimizer'
 
 // Mock the StockPortfolioOptimizer class
 vi.mock('./StockPortfolioOptimizer', () => {
-  return {
-    default: vi.fn().mockImplementation((budget) => ({
-      budget,
-      stocks: [],
-      addStock: vi.fn(function(name, price, performance) {
-        this.stocks.push({
-          name,
-          price,
-          performance,
-          roi: performance / 100,
-          finalValue: price * (1 + performance / 100),
-          maxShares: Math.floor(budget / price)
-        })
-      }),
-      getDetailedResults: vi.fn(() => ({
-        stockAnalysis: [
-          {
-            rank: 1,
-            name: 'Test Stock',
-            price: 100,
-            performance: 150,
-            roi: 1.5,
-            finalValue: 250,
-            maxShares: 100
-          }
-        ],
-        strategies: [
-          {
-            name: 'Pure Performance Strategy',
-            allocation: [
-              {
-                stock: { name: 'Test Stock', price: 100 },
-                shares: 10,
-                cost: 1000,
-                finalValue: 2500
-              }
-            ],
-            performance: {
+  const MockStockPortfolioOptimizer = vi.fn(function(budget) {
+    this.budget = budget
+    this.stocks = []
+    this.addStock = vi.fn(function(name, price, performance) {
+      this.stocks.push({
+        name,
+        price,
+        performance,
+        roi: performance / 100,
+        finalValue: price * (1 + performance / 100),
+        maxShares: Math.floor(budget / price)
+      })
+    })
+    this.getDetailedResults = vi.fn(() => ({
+      stockAnalysis: [
+        {
+          rank: 1,
+          name: 'Test Stock',
+          price: 100,
+          performance: 150,
+          roi: 1.5,
+          finalValue: 250,
+          maxShares: 100
+        }
+      ],
+      strategies: [
+        {
+          name: 'Pure Performance Strategy',
+          allocation: [
+            {
+              stock: { name: 'Test Stock', price: 100 },
+              shares: 10,
               cost: 1000,
-              finalValue: 2500,
-              profit: 1500,
-              roi: 150
-            },
-            remainingBudget: 19000
-          }
-        ],
-        recommendation: 'Pure Performance'
-      }))
+              finalValue: 2500
+            }
+          ],
+          performance: {
+            cost: 1000,
+            finalValue: 2500,
+            profit: 1500,
+            roi: 150
+          },
+          remainingBudget: 19000
+        }
+      ],
+      recommendation: 'Pure Performance'
     }))
+  })
+  
+  return {
+    default: MockStockPortfolioOptimizer
   }
 })
 
