@@ -1,5 +1,7 @@
 # portfolio-reccos
 
+[![CI/CD Pipeline](https://github.com/achudars/portfolio-reccos/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/achudars/portfolio-reccos/actions/workflows/ci-cd.yml)
+
 A stock portfolio optimization application built with React and Vite. This tool helps you analyze investment strategies and optimize stock allocations based on your budget and stock performance projections.
 
 ## Screenshot
