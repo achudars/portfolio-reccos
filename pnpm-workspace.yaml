@@ -5,3 +5,7 @@ allowBuilds:
   '@img/sharp-win32-x64': true
   sharp: true
   unrs-resolver: true
+minimumReleaseAgeExclude:
+  - html-encoding-sniffer@7.0.0
+  - jsdom@30.1.1
+  - w3c-xmlserializer@6.0.0
